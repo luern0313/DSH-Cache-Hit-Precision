@@ -1,0 +1,9 @@
+# dsh-cache-hit-precision bundle patch.
+#
+# Applied after the profile's earlier bundles (for the stock web profile that
+# means after @deepseek-ai/dsh-web-app), so the original `stats` entry in
+# `conversation.composer.dock` already exists and our client plugin can shadow
+# it at priority -1.
+- insert:
+    - id: cache-hit-precision
+      name: dsh-cache-hit-precision

@@ -1,0 +1,22 @@
+{
+  "name": "dsh-cache-hit-precision",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tiny dsh web plugin that shows the cache-hit rate with two decimal places in the chat stats line.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}
